@@ -5,7 +5,7 @@ from locators.form_page_locators import FormPageLocators as Locators
 
 class FormPageLogin(BasePage):
     def fill_fields_and_login(self):
-        email = 'twqv7lv@daymail.site'
+        email = 'md3t0kd@yourfastmail.online'
         name = 'Ne'
         password = '1234'
         self.element_is_visible(Locators.EMAIL_LOG).send_keys(email)
@@ -13,3 +13,5 @@ class FormPageLogin(BasePage):
         self.element_is_visible(Locators.LOGIN).click()
 
     time.sleep(10)
+
+
