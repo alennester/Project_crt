@@ -7,7 +7,7 @@ from selenium.webdriver.common.by import By
 class FormPageSingUp(BasePage):
 
     def fill_fields_and_submit(self):
-        email = 'wemn2j@yourfastmail.online'
+        email = 'd47vth@yourfastmail.online'
         name = 'Ne'
         password = '1234'
         self.element_is_visible(Locators.EMAIL).send_keys(email)
