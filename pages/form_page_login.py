@@ -10,4 +10,11 @@ class FormPageLogin(BasePage):
         self.element_is_visible(Locators.EMAIL_LOG).send_keys(email)
         self.element_is_visible(Locators.PASSWORD_LOG).send_keys(password)
         self.element_is_visible(Locators.LOGIN).click()
-        time.sleep(10)
+
+    def fill_field_and_login(self):
+        email = 'd47vth'
+        password = '1234'
+        self.element_is_visible(Locators.EMAIL_LOG).send_keys(email)
+        self.element_is_visible(Locators.PASSWORD_LOG).send_keys(password)
+        self.element_is_visible(Locators.LOGIN).click()
+
