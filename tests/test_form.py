@@ -9,7 +9,7 @@ class TestFormPage:
         home_page.open()
         home_page.find_sign_up()
 
-    def test_sign_up(self, driver):
+    def test_sign_up_click(self, driver):
         home_page = FormPageSignUp(driver, 'http://localhost:5000')
         home_page.open()
         home_page.click_sign_up()
