@@ -4,9 +4,7 @@ from locators.form_page_locators import FormPageLocators as Locators
 class FormPageSignUp(BasePage):
 
     def find_sign_up(self):
-        self.element_is_visible(Locators.SING_UP_HREF).click()
-        fd_sn = self.element_is_visible(Locators.SING_UP_H).is_displayed()
-        assert fd_sn
+       assert self.element_is_visible(Locators.SING_UP_HREF).is_displayed()
 
     def click_sign_up(self):
         self.element_is_visible(Locators.SING_UP_HREF).click()
