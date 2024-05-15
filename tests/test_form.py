@@ -22,8 +22,8 @@ class TestFormPage:
             pytest.param(('vcrbb6@yourfastmail.online','', '123$!abs'), id= 'vcrbb6@yourfastmail.online, ,123$!abs'),
             pytest.param(('absd12dfsgjcljahccnbvbvxv@yourfastmail.online', 'Ан', '!&ikfsdvnd'), id='absd12dfsgjcljahccnbvbvxv@yourfastmail.online, Ан, !&ikfsdvnd'),
             pytest.param(('jva23@daymail.site', 'Nana', 'tg0EofHyC'), id='jva23@daymail.site, Nana, tg0EofHyC'),
-            pytest.param(('mareteg667@rencr.com', 'liandra', '%eN1c49#7r$%E405'), id='mareteg667@rencr.com, liandra, %eN1c49#7r$%E405')
-
+            pytest.param(('maretg667@rencr.com', 'liandra', '%eN1c49#7r$%E405'), id='maretg667@rencr.com, liandra, %eN1c49#7r$%E405'),
+            pytest.param(('FEZ@DAYMAIL.SITE', 'Lena', 'WTc6aTY7'), id='FEZ@DAYMAIL.SITE, Lena, WTc6aTY7')
         ]
     )
     def test_form(self, driver, creds):
@@ -38,9 +38,8 @@ class TestFormPage:
             pytest.param(('', '', ''), id='empty fields'),
             pytest.param(('hdbvp@.site', '', '123654a'), id='hdbvp@.site, 123654a'),
             pytest.param(('hdbvp@daymail.сит', '', '@oFcr84C~ljp@V9QssI'), id='hdbvp@daymail.сит, @oFcr84C~ljp@V9QssI'),
-            pytest.param(('hmuz6m@yourfastmail.online', 'Елена', 'рвздватри'), id='hmuz6m@yourfastmail.online, Елена, рвздватри'),
-            pytest.param(('QVHJFv1@yourfastmail.online', '', '@oFcr84C'), id='QVHJFv1@yourfastmail.online, @oFcr84C'),
-            pytest.param(('FEZ@DAYMAIL.SITE', 'Lena', 'WTc6aTY7'), id='FEZ@DAYMAIL.SITE, Lena, WTc6aTY7'),
+            pytest.param(('hmuz6m@yourfastmail.online', 'Елена', 'раздватри'), id='hmuz6m@yourfastmail.online, Елена, рвздватри'),
+            pytest.param(('v@yourfastmail.online', '', '@oFcr84C'), id='v@yourfastmail.online, @oFcr84C'),
             pytest.param(('hdbvp@.site', '', '123654a'), id='hdbvp@.site, 123654a'),
             pytest.param(('hdbvp@фтлврс.site', '', 'hksndcbf'), id='hdbvp@фтлврс.site, hksndcbf')
 
