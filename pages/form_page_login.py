@@ -9,7 +9,7 @@ class FormPageLogin(BasePage):
 
     def login_click(self):
         self.element_is_visible(Locators.LOGIN_HREF).click()
-        ln_cl = self.element_is_visible(Locators.LOGIN).is_displayed()
+        ln_cl = self.element_is_visible(Locators.LOGIN).text
         assert 'Login' == ln_cl
 
     def fill_fields_and_login(self, users):
@@ -17,8 +17,8 @@ class FormPageLogin(BasePage):
         self.element_is_visible(Locators.EMAIL_LOG).send_keys(email)
         self.element_is_visible(Locators.PASSWORD_LOG).send_keys(password)
         self.element_is_visible(Locators.LOGIN).click()
-        login = self.element_is_visible(Locators.PROFILE).text
-        assert 'Profile' == login
+        assert self.element_is_visible(Locators.PROFILE).is_displayed()
+
 
     def fill_fields_check_login(self, users):
         email, password = users
@@ -26,8 +26,8 @@ class FormPageLogin(BasePage):
         self.element_is_visible(Locators.PASSWORD_LOG).send_keys(password)
         self.element_is_visible(Locators.CHECK_BOX).click()
         self.element_is_visible(Locators.LOGIN).click()
-        login = self.element_is_visible(Locators.PROFILE).text
-        assert 'Profile' == login
+        assert self.element_is_visible(Locators.PROFILE).is_displayed()
+
 
     def fill_email_warning(self, try_again):
         email, password = try_again

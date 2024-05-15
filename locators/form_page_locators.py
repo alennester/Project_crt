@@ -15,5 +15,5 @@ class FormPageLocators:
     SING_UP_H = (By.XPATH,'/html/body/section/div[2]/div/div/h3')
     LOGIN_IN_H = (By.XPATH, '/html/body/section/div[2]/div/div/h3')
     EMAIL_EX = (By.XPATH, '/html/body/section/div[2]/div/div/div/div/a')
-    PROFILE = (By.XPATH, '//*[@id="navbarMenuHeroA"]/div/a[2]')
-    TRY_AGAIN = (By.XPATH, '')
+    PROFILE = (By.XPATH, '//html/body/section/div[2]/div/h1')
+    TRY_AGAIN = (By.XPATH, '/html/body/section/div[2]/div/div/div/div')

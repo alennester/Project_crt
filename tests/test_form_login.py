@@ -19,14 +19,11 @@ class TestFormPageLogin:
     @pytest.mark.parametrize(
         'users',
         [
-            pytest.param(('w3m72z@yourfastmail.online', 'anna123'),
-                         id='w3m72z@yourfastmail.online, anna123'),
+            pytest.param(('w3m72z@yourfastmail.online', 'anna123'), id='w3m72z@yourfastmail.online, anna123'),
             pytest.param(('vcrbb6@yourfastmail.online', '123$!abs'), id='vcrbb6@yourfastmail.online, 123$!abs'),
-            pytest.param(('absd12dfsgjcljahccnbvbvxv@yourfastmail.online', '!&ikfsdvnd'),
-                         id='absd12dfsgjcljahccnbvbvxv@yourfastmail.online,!&ikfsdvnd'),
+            pytest.param(('absd12dfsgjcljahccnbvbvxv@yourfastmail.online', '!&ikfsdvnd'), id='absd12dfsgjcljahccnbvbvxv@yourfastmail.online,!&ikfsdvnd'),
             pytest.param(('jva23@daymail.site', 'tg0EofHyC'), id='jva23@daymail.site,tg0EofHyC'),
-            pytest.param(('mareteg667@rencr.com', '%eN1c49#7r$%E405'),
-                         id='mareteg667@rencr.com,%eN1c49#7r$%E405')
+            pytest.param(('mareteg667@rencr.com', '%eN1c49#7r$%E405'), id='mareteg667@rencr.com,%eN1c49#7r$%E405')
 
         ]
     )
