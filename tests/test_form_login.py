@@ -23,7 +23,9 @@ class TestFormPageLogin:
             pytest.param(('vcrbb6@yourfastmail.online', '123$!abs'), id='vcrbb6@yourfastmail.online, 123$!abs'),
             pytest.param(('absd12dfsgjcljahccnbvbvxv@yourfastmail.online', '!&ikfsdvnd'), id='absd12dfsgjcljahccnbvbvxv@yourfastmail.online,!&ikfsdvnd'),
             pytest.param(('jva23@daymail.site', 'tg0EofHyC'), id='jva23@daymail.site,tg0EofHyC'),
-            pytest.param(('mareteg667@rencr.com', '%eN1c49#7r$%E405'), id='mareteg667@rencr.com,%eN1c49#7r$%E405')
+            pytest.param(('maretg667@rencr.com', '%eN1c49#7r$%E405'), id='mareteg667@rencr.com,%eN1c49#7r$%E405'),
+            pytest.param(('QVHJFv1@yourfastmail.online', '@oFcr84C'), id='QVHJFv1@yourfastmail.online, @oFcr84C'),
+            pytest.param(('FEZ@DAYMAIL.SITE', 'WTc6aTY7'), id='FEZ@DAYMAIL.SITE, WTc6aTY7')
 
         ]
     )
@@ -41,8 +43,10 @@ class TestFormPageLogin:
             pytest.param(('absd12dfsgjcljahccnbvbvxv@yourfastmail.online', '!&ikfsdvnd'),
                          id='absd12dfsgjcljahccnbvbvxv@yourfastmail.online,!&ikfsdvnd'),
             pytest.param(('jva23@daymail.site', 'tg0EofHyC'), id='jva23@daymail.site,tg0EofHyC'),
-            pytest.param(('mareteg667@rencr.com', '%eN1c49#7r$%E405'),
-                         id='mareteg667@rencr.com,%eN1c49#7r$%E405')
+            pytest.param(('maretg667@rencr.com', '%eN1c49#7r$%E405'),
+                         id='mareteg667@rencr.com,%eN1c49#7r$%E405'),
+            pytest.param(('QVHJFv1@yourfastmail.online', '@oFcr84C'), id='QVHJFv1@yourfastmail.online, @oFcr84C'),
+            pytest.param(('FEZ@DAYMAIL.SITE', 'WTc6aTY7'), id='FEZ@DAYMAIL.SITE, WTc6aTY7')
         ]
     )
     def test_form_check(self, driver, users):
@@ -74,8 +78,6 @@ class TestFormPageLogin:
             pytest.param(('hdbvp@.site', '123654a'), id='hdbvp@.site, 123654a'),
             pytest.param(('hdbvp@daymail.сит', '@oFcr84C~ljp@V9QssI'), id='hdbvp@daymail.сит, @oFcr84C~ljp@V9QssI'),
             pytest.param(('hmuz6m@yourfastmail.online', 'рвздватри'), id='hmuz6m@yourfastmail.online, рвздватри'),
-            pytest.param(('QVHJFv1@yourfastmail.online', '@oFcr84C'), id='QVHJFv1@yourfastmail.online, @oFcr84C'),
-            pytest.param(('FEZ@DAYMAIL.SITE', 'WTc6aTY7'), id='FEZ@DAYMAIL.SITE, WTc6aTY7'),
             pytest.param(('hdbvp@фтлврс.site', 'hksndcbf'), id='hdbvp@фтлврс.site, hksndcbf')
         ]
     )
@@ -92,8 +94,6 @@ class TestFormPageLogin:
             pytest.param(('hdbvp@.site', '123654a'), id='hdbvp@.site, 123654a'),
             pytest.param(('hdbvp@daymail.сит', '@oFcr84C~ljp@V9QssI'), id='hdbvp@daymail.сит, @oFcr84C~ljp@V9QssI'),
             pytest.param(('hmuz6m@yourfastmail.online', 'рвздватри'), id='hmuz6m@yourfastmail.online, рвздватри'),
-            pytest.param(('QVHJFv1@yourfastmail.online', '@oFcr84C'), id='QVHJFv1@yourfastmail.online, @oFcr84C'),
-            pytest.param(('FEZ@DAYMAIL.SITE', 'WTc6aTY7'), id='FEZ@DAYMAIL.SITE, WTc6aTY7'),
             pytest.param(('hdbvp@фтлврс.site', 'hksndcbf'), id='hdbvp@фтлврс.site, hksndcbf')
         ]
     )
