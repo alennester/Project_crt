@@ -3,6 +3,7 @@ from pages.form_page import FormPageSignUp
 from conftest import driver
 
 
+
 class TestFormPage:
     def test_sign_up(self, driver):
         home_page = FormPageSignUp(driver, 'http://localhost:5000')
